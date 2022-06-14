@@ -1,0 +1,11 @@
+{% extends "index.html" %}
+
+{% block content %}
+<h1 style="margin-left: 30px;"> Lieu: {{ infras.lieu }} </h1>
+
+    <p style="margin-left: 30px;"><strong>Machines</strong> : {{ infras.machines }}</a></p>
+    <p style="margin-left: 30px;"><strong>Manager</strong > : {{ infras.manager }}</p>
+    <p style="margin-left: 30px;"><strong>Employées</strong> : {{ infras.employe }}</p>
+    <p style="margin-left: 30px;"><strong>Réseau</strong> : 172.23.X.0/24 </p>
+    <p style="margin-left: 30px;"><strong>Localisation</strong> : <a href="https://www.google.com/maps/place/45%C2%B045'21.9%22N+4%C2%B049'34.4%22E/@45.7560807,4.8240273,17z/data=!3m1!4b1!4m6!3m5!1s0x0:0x3dab3191cb502144!7e2!8m2!3d45.7560773!4d4.8262157">45°45'21.9"N 4°49'34.4"E </a> </p>
+{% endblock %}

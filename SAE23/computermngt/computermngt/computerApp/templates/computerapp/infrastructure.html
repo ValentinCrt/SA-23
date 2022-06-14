@@ -1,0 +1,23 @@
+{% extends "index.html" %}
+
+{% block content %}
+    <h1 style="text-align: center; margin-top: -60px;">Liste des Infrastructures</h1>
+    {% if infra %}
+    <table class="table table-dark table-hover" border="1" cellpadding="5">
+        <td style="font-family:verdana;" >Lieu</td>
+        <td style="font-family:verdana;" >Machines</td>
+        <td style="font-family:verdana;" >Manager</td>
+        <td style="font-family:verdana;" >Employées</td>
+        {% for infras in infra %}
+            <tr>
+                <td><a href="{% url 'infra-detail' infras.lieu%}">{{ infras.lieu }}</a></td> 
+                <td>{{infras.machines}}</td>
+                <td>{{infras.manager}}</td>
+                <td>{{infras.employe}}</td>
+            </tr>
+        {% endfor %}
+    </table>
+    {% else %}
+        <p>Il n\'y a pas d'Infrastructure'.</p >
+    {% endif %}
+{% endblock %}

@@ -1,0 +1,13 @@
+{% extends "index.html" %}
+
+{% block content %}
+    <h1 style="margin-left: 30px;"> identité: {{personnel.prenom}} {{ personnel.nom }} </h1>
+
+    <p style="margin-left: 30px;"><strong>Secu</strong> : {{ personnel.secu }}</a></p>
+    <p style="margin-left: 30px;"><strong>Prenom :
+    </strong > {{ personnel.prenom }}</p>
+    <p style="margin-left: 30px;"><strong> Nom :
+    </strong> {{ personnel.nom }}</p>
+    <p style="margin-left: 30px;"><strong> Lieu :
+    </strong> {{ personnel.lieu }}</p>
+{% endblock %}
